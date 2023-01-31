@@ -386,7 +386,7 @@ async def get_shortlink(link):
     url = f'https://omegalinks.in/api'
     params = {'api': URL_SHORTNER_WEBSITE_API,
               'link': link,
-              'format': 'json'
+              'format': 'text'
               }
 
     try:
