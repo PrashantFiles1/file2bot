@@ -385,7 +385,7 @@ async def get_shortlink(link):
 
     url = f'https://omegalinks.in/api'
     params = {'api': URL_SHORTNER_WEBSITE_API,
-              'url': alias,
+              'url': url,
               'format': 'json'
               }
 
@@ -397,8 +397,8 @@ async def get_shortlink(link):
                     return data['shortlink']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://omegalinks.in/api?api={URL_SHORTNER_WEBSITE_API}&url={alias}'
+                    return f'https://omegalinks.in/api?api={URL_SHORTNER_WEBSITE_API}&url={url}'
 
     except Exception as e:
         logger.error(e)
-        return f'https://omegalinks.in/api?api={URL_SHORTNER_WEBSITE_API}&url={alias}'
+        return f'https://omegalinks.in/api?api={URL_SHORTNER_WEBSITE_API}&url={url}'
