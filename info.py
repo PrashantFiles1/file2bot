@@ -71,14 +71,14 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
       # URL Shortener #
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'api/shareus.io/shortlink')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'api.shareus.in/shortLink')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'clvuHx1UobYL4eOCpljXuVbnkOt1')
 
      # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 600))
-SELF_DELETE = environ.get('SELF_DELETE', true)
-if SELF_DELETE == "true":
-    SELF_DELETE = true
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 500))
+SELF_DELETE = environ.get('SELF_DELETE', True)
+if SELF_DELETE == "True":
+    SELF_DELETE = True
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
@@ -86,6 +86,6 @@ DOWNLOAD_TEXT_URL = "https://youtu.be/9EF2sSnWKgE"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/@prime6backup"
+CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
 
    # Auto Delete For Bot Sending Files #
